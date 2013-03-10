@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.2.12'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby', '3.0.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -19,7 +20,12 @@ end
 
 group :test do
 	gem 'capybara', '1.1.2'
-end			
+end
+
+# Add comment, update => bundle exec annotate
+
+gem 'annotate', '2.5.0', group: :development			
+
 
 # Gems used only for assets and not required
 # in production environments by default.
